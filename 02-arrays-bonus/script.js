@@ -8,7 +8,8 @@ console.log(reversedTeachers);
 
 //Soluzione con ciclo "for"
 
-let reversedTeachers2 = [];
+const reversedTeachers2 = [];
+
 for (let i = teachers.length - 1; i >= 0; i--) {
     reversedTeachers2.push(teachers[i]);
 }
@@ -20,9 +21,9 @@ console.log(reversedTeachers2);
 const longNames = [];
 
 for (let i = 0; i < teachers.length; i++) {
-
-    if (teachers[i].length >= 5) {
-        longNames.push(teachers[i]);
+    const curTeacher = teachers[i];     //usare "current"!!
+    if (curTeacher.length >= 5) {
+        longNames.push(curTeacher);
     }
 }
 console.log(longNames);

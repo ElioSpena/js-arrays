@@ -45,15 +45,14 @@ console.log(userNumberSum);
 // 4. Calcola la somma e la media dei primi 10 numeri.
 
 const numbers = [];
-let meanNum = 0;
+let sumNumbers = 0;
 
 for (let i = 1; i <= 10; i++) {
-
     numbers.push(i);
-    meanNum = (numbers.length * i) / 10;
-
+    sumNumbers += i;
 }
-console.log(meanNum);
+const meanNum = sumNumbers / numbers.length;
+console.log(numbers, sumNumbers, meanNum);
 
 
 // 5. Generatore di “nomi cognomi” casuali: il Grande Gatsby ha una lista di nomi e una lista di cognomi, e da queste vuole generare una falsa lista di invitati con nome e cognome
